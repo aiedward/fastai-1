@@ -49,29 +49,7 @@ pip install .
 5. Tabular/structured data analysis
 	1. Forecast sales (Rossmann Store Sales Kaggle competition)
 
-**Contents:**
 
-1. NLP
-	1. Language models
-		1. Transfer learning for NLP and sentiment analysis for the IMDb dataset
-		2. Character-based language model from scratch generating Nietzsche
-		3. Character-based language using GRU and LSTM
-	2. Neural machine translation: seq2seq with Attention (Luong et al., 2015)
-2. Computer vision
-	1. ResNet from scratch
-	2. Darknet from scratch trained on Cifar10
-	3. Class activation maps (CAM)
-	4. Multi-label classification: Understanding the Amazon from space
-	5. Object detection/single shot detection
-	6. Image segmentation using U-net from scratch
-	7. DeViSE - A Deep Visual-Semantic Embedding Model
-	8. Super-Resolution
-3. Generative models
-	1. GANs: Wasserstein GAN from scratch
-	2. Style transfer
-4. Recommender systems
-	1. Collaborative filtering (probabilistic matrix factorization) 
-5. Structured data analysis
 
 
 	
@@ -97,7 +75,7 @@ The classifier achieves an accuracy of 94.6 %.
 Example for the language model:
 
 
-For the input sequence `". so , it was n't quite was i was expecting , but i really liked it anyway ! the best"` the predicted next words are `['part', 'thing', 'scene', 'way', 'parts', 'of', 'line', 'aspect', 'performance', 'scenes']`.
+For the input sequence `". so , it was n't quite was i was expecting , but i really liked it anyway ! the best"` the predicted possible next words are `['part', 'thing', 'scene', 'way', 'parts', 'of', 'line', 'aspect', 'performance', 'scenes']`.
 
 
 
@@ -109,7 +87,7 @@ Building a character-based language model from scratch in PyTorch and training i
 Building a character-based language model from scratch using PyTorch that *uses GRU (Gated recurrent unit) or LSTM cells*. Trained it on [Nietzsche](https://github.com/mbernico/lstm_bot/blob/master/lstm_bot/nietzsche.txt).
 
 
-Example: A sequence started with *for those* is continued with *for those exclusion of the root of through their anth--life as yet grow theleops, again, difficulty, divined claal man, weel viced agrown,diffule, trained, and afwords of history of this all godand depth, to overlooks or to other. for this hand. how possiblity! so that one must necessarily responsible, sequently fredom!" or oven our culture to be expediency, instinct, rationary evidence, again philosophy--*. 
+Example: A sequence started with *"for those"* is continued with *"for those exclusion of the root of through their anth--life as yet grow theleops, again, difficulty, divined claal man, weel viced agrown,diffule, trained, and afwords of history of this all godand depth, to overlooks or to other. for this hand. how possiblity! so that one must necessarily responsible, sequently fredom!' or oven our culture to be expediency, instinct, rationary evidence, again philosophy--"*. 
 
 Ok, looks a little like Nietzsche but not quite there yet ;)
 
@@ -196,7 +174,7 @@ Read my blog post explaining [SSD - single shot multibox detection](https://towa
 
 ### Image segmentation with U-net from scratch
 
-Build a U-net from scratch using PyTorch and training it to segment cars from background.
+Build a U-net from scratch using PyTorch and train it to segment cars from background.
 
 Labeled traning dataset:
 
